@@ -245,10 +245,11 @@ const fontSize=Math.floor(canvas.width*0.055)
 ctx.font=`${fontSize}px serif`
 ctx.fillStyle="#61211b"
 
-const textX=canvas.width*0.13
-const textY=canvas.height*0.85
+const textX = canvas.width * 0.5; // center horizontally
+const textY = canvas.height * 0.82; // position exactly over dashed line
 
-ctx.fillText(name,textX,textY)
+ctx.textAlign = "center";
+ctx.fillText(name, textX, textY)
 
 }
 }
